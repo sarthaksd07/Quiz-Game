@@ -21,7 +21,7 @@ public class QuizGame {
         Scanner input=new Scanner(System.in);
         DBConn db=new DBConn();
         System.out.println("Please Select the Level:");
-        System.out.println("1: EASY , 2: MEDIUM , 3: HARD");
+        System.out.println("1: EASY , 2: MEDIUM , 3: HARD");//Level Selection
         int level=input.nextInt();
         if (level ==1 )
         {
@@ -37,7 +37,7 @@ public class QuizGame {
         db.dbOperation("HARD");
         } else
         {
-        System.out.println("Invalid Value . Please select the Level Correctly(1,2,3)");
+        System.out.println("Invalid Value . Please select the Level Correctly(1,2,3)");// invalid Attempt condition
         }
     }
 

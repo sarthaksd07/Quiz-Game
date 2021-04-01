@@ -92,7 +92,7 @@ while(rs1.next()){
 System.out.println("Question : "+rs1.getString(1));
 System.out.println("Your Answer : "+rs1.getString(3)+ "   Correct Answer: "+rs1.getString(2));
 }
-String rsSQL="select case when count(1)<=1 then 'Poor' "
+String rsSQL="select case when count(1)<=1 then 'Poor' "// Report cases according to Answers
 +" when count(1)<=2 then 'Bad'"
 +" when count(1)<=3 then 'Good'"
 +" when count(1)<=4 then 'Strong'"
@@ -102,7 +102,7 @@ String rsSQL="select case when count(1)<=1 then 'Poor' "
 ResultSet rs=st.executeQuery(rsSQL);
 rs.next();
 String result=rs.getString(1);
-System.out.println("Result: "+result);
+System.out.println("Result: "+result);// Result according to answers
 
 }
 catch(Exception e)
